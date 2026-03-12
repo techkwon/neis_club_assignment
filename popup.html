@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나이스 동아리 배정 도우미</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="icon48.png" alt="Logo">
+            </div>
+            <h1>동아리 배정 자동화</h1>
+        </header>
+
+        <main>
+            <div class="card info-card">
+                <p>나이스 <strong>동아리 배정 화면</strong>에서만 작동합니다.</p>
+                <button id="btnDownloadTemplate" class="btn secondary">⬇️ CSV 템플릿 양식 받기</button>
+            </div>
+
+            <div class="card upload-card">
+                <h3>데이터 업로드 (CSV)</h3>
+                <div class="file-input-wrapper">
+                    <input type="file" id="csvFileInput" accept=".csv" />
+                    <label for="csvFileInput" class="file-label">
+                        <span id="fileChosenText">파일을 선택하거나 드래그하세요</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="card status-card">
+                <h3>작업 상태</h3>
+                <div id="statusMessage" class="status-indicator">대기 중...</div>
+                
+                <div class="progress-info">
+                    <span id="progressText">0 / 0 명</span>
+                </div>
+                <!-- Action button -->
+                <div style="display: flex; gap: 8px;">
+                    <button id="btnStartAutoAssign" class="btn primary" disabled>🚀 배정 시작</button>
+                    <button id="btnPauseResume" class="btn secondary" style="display:none; flex: 1;">일시정지</button>
+                    <button id="btnStop" class="btn secondary" style="display:none; flex: 1; color: var(--error);">정지</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <small>모든 데이터는 브라우저 내부에서만 안전하게 처리됩니다.</small>
+        </footer>
+    </div>
+    
+    <script src="papaparse.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

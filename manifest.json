@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "나이스 동아리 배정 도우미",
+  "version": "1.1",
+  "description": "4세대 나이스(NEIS) 동아리 배정 작업을 CSV를 통해 자동으로 처리하는 브라우저 온디바이스 확장 프로그램입니다.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "*://goe.neis.go.kr/*",
+    "*://neis.goe.go.kr/*",
+    "*://*.neis.go.kr/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://goe.neis.go.kr/*",
+        "*://neis.goe.go.kr/*",
+        "*://*.neis.go.kr/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "action": {
+    "default_title": "나이스 동아리 배정",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

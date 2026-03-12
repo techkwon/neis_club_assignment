@@ -1,0 +1,16 @@
+# Temporary files
+.DS_Store
+Thumbs.db
+
+# Chrome Extension unnecessary files for source
+store_assets/neis_club_assignment.zip
+
+# Node/Build artifacts (if any)
+node_modules/
+dist/
+build/
+
+# Old Version files (optional to keep in git, but maybe user wants them)
+# popup.html
+# popup.js
+# popup.css

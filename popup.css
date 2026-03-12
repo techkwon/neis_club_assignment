@@ -1,0 +1,170 @@
+:root {
+  --primary: #4A90E2;      /* 나이스(NEIS) 기본 색상과 유사한 톤 */
+  --primary-hover: #357ABD;
+  --secondary: #EAF2F8;    /* 옅은 파란색 배경 */
+  --secondary-text: #2C3E50;
+  --bg-color: #F8F9FA;     /* 전체 배경 */
+  --card-bg: #FFFFFF;
+  --text-main: #333333;
+  --text-muted: #777777;
+  --border: #E0E0E0;
+  --success: #28A745;
+  --error: #DC3545;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--primary);
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+h1 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  padding: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+/* Info Card */
+.info-card {
+  background-color: var(--secondary);
+  border-left: 4px solid var(--primary);
+}
+.info-card p {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: var(--secondary-text);
+  line-height: 1.4;
+}
+
+/* Upload Card */
+.file-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+.file-input-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+}
+.file-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  background-color: #FAFAFA;
+  border: 2px dashed #CCCCCC;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.file-input-wrapper:hover .file-label {
+  background-color: #F0F8FF;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Status Card */
+.status-indicator {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--primary);
+  margin-bottom: 8px;
+  text-align: center;
+  padding: 8px;
+  background-color: var(--secondary);
+  border-radius: 4px;
+}
+.progress-info {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: center;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn.primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+.btn.primary:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+.btn.secondary {
+  background-color: #FFFFFF;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  padding: 8px;
+}
+.btn.secondary:hover {
+  background-color: #F5F5F5;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 11px;
+}
