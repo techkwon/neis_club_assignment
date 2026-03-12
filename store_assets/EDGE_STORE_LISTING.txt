@@ -1,38 +1,77 @@
-# Microsoft Edge Add-ons Store Registration Info
-# Edge Partner Center: https://partner.microsoft.com/dashboard/microsoftedge
+# MS 엣지 애드온 스토어 등록 정보
+# 파트너 센터(Edge Add-ons): https://partner.microsoft.com/dashboard/microsoftedge
 
 ===========================================
-📌 Product Details
+📌 기본 세부 정보 (Product Details)
 ===========================================
-- Name: 나이스 동아리 배정 도우미 (NEIS Club Assignment Helper)
-- Summary: Automate NEIS club assignments with CSV files.
-- Description: 
-NEIS Club Assignment Helper is a browser extension designed to automate student assignments for the 4th generation NEIS (National Education Information System).
+- 이름 (Name): 
+나이스 동아리 배정 도우미
 
-Instead of manually clicking hundreds of students, simply upload a CSV file and let the helper do the work.
-
-Key Features:
-- CSV-based automation: Fast and accurate student assignments.
-- Smart Matching: Name-based matching with Student Number fallback.
-- Sorting: Auto-sort data to minimize group changes.
-- Security: All data is processed locally on-device. No data transmission to external servers.
+- 간단한 설명 (Short description / 최대 110자): 
+4세대 나이스(NEIS) 동아리 부서배정을 CSV 파일로 자동 처리합니다. 수동 입력의 번거로움을 줄이고 빠르고 정확하게 배정을 완료하세요.
 
 ===========================================
-📌 Category
+📌 상세 설명 (Description)
 ===========================================
-Productivity
+나이스 동아리 배정 도우미는 4세대 나이스(NEIS)의 동아리 부서배정 작업을 자동화해 더욱 스마트하고 효율적인 업무 환경을 제공하는 엣지 확장 프로그램입니다.
+
+수백 명의 학생을 마우스로 일일이 클릭하며 배정하던 지루한 반복 작업을 이제 엑셀(CSV) 파일 하나로 단숨에 해결하세요. 교직원들의 업무 부담을 획기적으로 줄여줍니다!
+
+🔹 주요 기능
+• CSV 기반 원클릭 자동 배정: 학년, 반, 번호, 이름, 동아리명이 담긴 CSV 파일을 표 양식에 맞게 업로드하면, 나머지는 자동으로 진행됩니다.
+• 스마트 학생 매칭: 학생 이름으로 우선 배정하고, 동명이인이 있거나 이름을 찾지 못하면 출석번호로 자동으로 다시 탐색합니다.
+• 동명 동아리 완벽 구분: [부서구분] 열을 활용해 동아리활동, 자율동아리, 청소년단체, 학교스포츠클럽 등 중복되는 동아리명을 정확히 구분합니다.
+• 자동 정렬 로직 적용: 데이터를 학년·반·번호 순으로 자동 정렬하여, 불필요한 드롭다운 UI 이동을 최소화하고 배정 속도를 극대화합니다.
+• 확실한 작업 제어: 배정 도중 언제라도 일시정지, 재개, 정지가 가능해 돌발 상황에 유연하게 대처할 수 있습니다.
+• 작업 통계 및 실시간 로그: 학생 개개인의 배정 성공/실패 여부를 실시간 로그로 보여주며, 완료 시 요약 통계(성공, 실패, 번호매칭 등)를 한눈에 보여줍니다.
+• 화면 꺼짐 방지(Wake Lock): 많은 수의 학생을 배정할 때, 작업 중 컴퓨터가 절전 모드로 진입하지 않도록 자동으로 막아줍니다.
+
+🔒 강력한 보안 & 개인정보보호 (On-Device)
+• 100% 로컬 처리: 수집된 학생 개인정보(이름, 번호 등)는 사용자가 사용 중인 웹 브라우저(로컬 PC) 내부에서만 처리됩니다.
+• 무(無) 서버 통신: 쾌적하고 안전한 보안 환경 유지를 위해 외부 서버로 일체의 데이터를 전송하거나 수집하지 않습니다.
+• 휘발성 데이터: 사용이 끝나거나 확장 프로그램을 닫는 즉시 임시 처리된 모든 데이터는 영구적으로 파기됩니다.
+
+📋 사용 가이드
+1. 엣지 브라우저에서 나이스 4세대 로그인 후 [창의적 체험활동] → [동아리활동관리] → [부서배정] 메뉴를 엽니다.
+2. 확장 프로그램 아이콘을 눌러 스마트 사이드바를 호출합니다.
+3. 배정 양식에 맞는 CSV 템플릿을 다운로드받아 학생 정보를 입력 후 업로드합니다.
+4. [배정 시작] 버튼을 누르고 완료될 때까지 잠시만 기다리시면 됩니다!
+
+⚠️ 주의 사항
+본 프로그램은 '나이스 4세대(neis.go.kr)' 환경의 '부서배정' 화면에서만 정상적으로 동작합니다.
 
 ===========================================
-📌 Upload Files
+📌 검색어 (Search Terms / 한 줄에 하나씩 입력)
 ===========================================
-- Package: store_assets/neis_club_assignment.zip
-- Icon: icon128.png (128x128)
-- Screenshots: (Capture from your browser)
-- Promotional Tiles:
-  - Small (440x280): store_assets/promo_small_440x280.png
-  - Large (1400x560): store_assets/promo_large_1400x560.png
+나이스
+NEIS
+동아리
+부서배정
+교육
+학교
+생활기록부
+창체
 
 ===========================================
-📌 Privacy Policy
+📌 카테고리 (Category)
+===========================================
+생산성 (Productivity) 또는 개발자 도구 (특정 카테고리에 맞게)
+
+===========================================
+📌 개인정보처리방침 URL (Privacy Policy URL)
 ===========================================
 https://github.com/techkwon/neis_club_assignment/blob/main/PRIVACY_POLICY.md
+
+===========================================
+📌 업로드 필요 지원 파일 (Store Assets)
+===========================================
+[패키지]
+- store_assets/neis_club_assignment.zip (.zip 패키지 파일)
+
+[스토어 로고]
+- icon128.png (128 x 128 픽셀)
+
+[프로모션 타일 이미지]
+- store_assets/promo_small_440x280.png (가로 440 x 세로 280)
+- store_assets/promo_large_1400x560.png (가로 1400 x 세로 560)
+  *엣지 스토어의 권장 프로모션 이미지 규격인 1400x560 또는 다른 배너 사이즈가 요구될 경우 기존 이미지를 활용하시면 됩니다.
