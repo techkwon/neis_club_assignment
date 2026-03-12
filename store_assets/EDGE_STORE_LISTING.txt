@@ -1,0 +1,38 @@
+# Microsoft Edge Add-ons Store Registration Info
+# Edge Partner Center: https://partner.microsoft.com/dashboard/microsoftedge
+
+===========================================
+📌 Product Details
+===========================================
+- Name: 나이스 동아리 배정 도우미 (NEIS Club Assignment Helper)
+- Summary: Automate NEIS club assignments with CSV files.
+- Description: 
+NEIS Club Assignment Helper is a browser extension designed to automate student assignments for the 4th generation NEIS (National Education Information System).
+
+Instead of manually clicking hundreds of students, simply upload a CSV file and let the helper do the work.
+
+Key Features:
+- CSV-based automation: Fast and accurate student assignments.
+- Smart Matching: Name-based matching with Student Number fallback.
+- Sorting: Auto-sort data to minimize group changes.
+- Security: All data is processed locally on-device. No data transmission to external servers.
+
+===========================================
+📌 Category
+===========================================
+Productivity
+
+===========================================
+📌 Upload Files
+===========================================
+- Package: store_assets/neis_club_assignment.zip
+- Icon: icon128.png (128x128)
+- Screenshots: (Capture from your browser)
+- Promotional Tiles:
+  - Small (440x280): store_assets/promo_small_440x280.png
+  - Large (1400x560): store_assets/promo_large_1400x560.png
+
+===========================================
+📌 Privacy Policy
+===========================================
+https://github.com/techkwon/neis_club_assignment/blob/main/PRIVACY_POLICY.md
